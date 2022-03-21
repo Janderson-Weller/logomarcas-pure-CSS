@@ -1,0 +1,374 @@
+
+.grid1, .grid2, .grid3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.Netflix, .Toyota, .BMW, .wolks, .Mitsubishi, .adidas {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    height: 550px;
+    background-color: #000000;
+    
+}
+
+.logo-netflix {
+    width: 80px;
+    height: 400px;
+    top: 50px;
+    background-color: #be0c15;
+    position: relative;
+    left: -65px;
+    
+}
+
+.logo-netflix::before {
+    width: 250px;
+    height: 30px;
+    left: -19px;
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    border-radius: 50%;
+    top: 380px;
+    z-index: 2;
+}
+
+.logo-netflix::after {
+    width: 80px;
+    height: 400px;
+    background-color: #be0c15;
+    content: "";
+    left: 126px;
+    position: absolute;
+}
+
+.logo-netflix span {
+    background-color: #FF0000;
+    width: 80px;
+    height: 400px;
+    position: absolute;
+    left: 66px;
+    transform: skew(18deg);
+    box-shadow: 0 0 10px;
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    color: aliceblue;
+    font-size: 30px;
+    top: 450px;
+}
+
+
+.Toyota {
+    align-items: center;
+}
+
+.logo-toyota {
+    position: relative;
+    width: 380px;
+    height: 230px;
+    border: 30px solid #CECFD3;
+    border-radius: 50%;
+}
+
+.logo-toyota::before {
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 80px;
+    left: 40px;
+    top: -30px;
+    /* box-shadow: 10px  yellow; */
+    border: 30px solid #CECFD3;
+    border-radius: 50%;
+}
+
+.logo-toyota::after {
+    width: 50px;
+    height: 180px;
+    border: 30px solid #CECFD3;
+    content: "";
+    left: 135px;
+    position: absolute;
+    border-radius: 50%;
+    top: -5px;
+}
+
+.BMW {
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.text-bmw {
+    color: #CECFD3;
+    font-size: 30px;
+    top: 30px;
+}
+
+.logo-bmw-circulo {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid  #CECFD3;;
+    border-radius: 50%;
+
+}
+
+.logo-bmw-circulo::before {
+    width: 250px;
+    height: 250px;
+    content: "";
+    position: absolute;
+    border: 10px solid #CECFD3;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+.logo-bmw-circulo::after {
+    width: 260px;
+    height: 260px;
+    content: "";
+    position: absolute;
+    border: 90px solid #000000;
+    border-radius: 50%;
+}
+
+.logo-bmw-quadrado-azul {
+    width: 155px;
+    height: 155px;
+    content: "";
+    position: relative;
+    background-color: rgb(31, 74, 194);
+    top: -77px;
+    left: 5px;
+}
+
+.logo-bmw-quadrado-azul::after {
+    width: 155px;
+    height: 155px;
+    content: "";
+    position: absolute;
+    background-color: rgb(31, 74, 194);
+    top: 150px;
+    left: 150px;
+}
+
+.logo-bmw-quadrado-branco {
+    width: 155px;
+    height: 155px;
+    position: relative;
+    background-color: white;
+    top: -77px;
+}
+
+.logo-bmw-quadrado-branco::after {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    left: -150px;
+    top: 155px;
+}
+
+.wolks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.text-vw {
+    color: #CECFD3;
+    font-size: 30px;
+    top: -150px;
+}
+
+
+.logo-wolks-circulo {
+    width: 450px;
+    height: 450px;
+    border: 10px solid #CECFD3;
+    background-color: #4972B4;
+    border-radius: 50%;
+}
+
+.logo-wolks-circulo::before {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    content: "";
+    margin: 35px;
+    border: 40px solid white;
+    border-radius: 50%;
+    z-index: 1;
+    
+}
+
+.logo-wolks-circulo .diagonal-direito  {
+    width: 40px;
+    height: 320px;
+    position: absolute;
+    left: 230px;
+    top: 130px;
+    transform: skew(-20deg);
+    background-color: #ffffff;
+    /* z-index: 1; */
+}
+
+.logo-wolks-circulo .diagonal-direito::before, .logo-wolks-circulo .diagonal-esquerdo::before   {
+    width: 40px;
+    height: 260px;
+    position: absolute;
+    content: "";
+    left: 110px;
+    top: 70px;
+    background-color: #ffffff;
+}
+
+/* Reta maior do ângulo para o lado esquerdo */
+.logo-wolks-circulo .diagonal-esquerdo {
+    width: 40px;
+    height: 320px;
+    position: absolute;
+    left: 230px;
+    top: 130px;
+    transform: skew(20deg);
+    background-color: #ffffff;
+}
+
+/* Reta menor do ângulo para o lado esquerdo */
+.logo-wolks-circulo .diagonal-esquerdo::before  {
+    left: -110px;
+    top: 70px;
+
+}
+
+/* Divisão entre a letra V e W */
+.logo-wolks-circulo .traco {
+    width: 70px;
+    height: 20px;
+    content: "";
+    top: 280px;
+    left: 210px;
+    transform: skew(20deg);
+    position: absolute;
+    background-color: #4972B4;
+    /* z-index: 10; */
+    
+}
+
+.Mitsubishi {
+ flex-direction: column;
+ align-items: center;
+ /* background-color: white; */
+}
+
+.text-rodape {
+    color: #ffffff;
+    margin-top: 100px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.logo-mitsubishi-cima {
+    width: 250px;
+    height: 250px;
+    top: -20px;
+    background-color: #be0c15;  
+    position: relative;
+    clip-path: polygon(50% 0, 75% 50%, 50% 100%, 25% 50%);
+}
+
+.logo-mitsubishi-base::before, .logo-mitsubishi-base::after {
+    width: 250px;
+    height: 250px;
+    content: "";
+    background-color: #be0c15;  
+    position: absolute;
+    margin: -90px -13px;
+    transform: rotate(116deg);
+    clip-path: polygon(50% 0, 75% 50%, 50% 100%, 25% 50%);
+}
+
+/* Vira base lado esquerdo */
+.logo-mitsubishi-base::after {
+    margin: -90px -238px;
+    transform: rotate(-116deg);
+}
+
+.adidas {
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+.adidas .text-rodape {
+    font-size: 100px;
+    color: #000000;
+}
+
+.logo-adidas {
+    width: 200px;
+    height: 200px;
+    top: 70px;
+    background-color: #000000;
+    position: relative;
+    border-radius: 200px 0;
+    transform: rotate(-45deg);
+}
+
+/* Abas laterias que possuem ângulo de 45° */
+.logo-adidas::before, .logo-adidas::after  {
+    width: 200px;
+    height: 200px;
+    content: "";
+    top: -60px;
+    left: -120px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: #000000;
+    border-radius: 0 200px;
+}
+
+.logo-adidas::after {
+    left: 60px;
+    top: 120px;
+    border-radius: 200px 0;
+}
+
+/* Linhas horizontais */
+.linha {
+    width: 500px;
+    height: 30px;
+    top: 65px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.linha::before, .linha::after {
+    width: 500px;
+    height: 30px;
+    top: -55px;
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.linha::after {
+    top: -105px;
+} 
